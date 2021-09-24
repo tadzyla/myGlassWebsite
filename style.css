@@ -4,7 +4,29 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: #426696;
+    font-weight: 500;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+h2, p {
+    color: #658ec6;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+
+
 main {
+    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb );
     display: flex;
@@ -19,8 +41,9 @@ main {
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     border-radius: 2rem;
     z-index: 2;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(1rem);
     display: flex;
+    
 }
 
 .circle1, .circle2 {
@@ -35,11 +58,13 @@ main {
 .circle1 {
     top: 5%;
     right: 10%;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.1);
 }
 
 .circle2 {
     bottom: 5%;
     left: 10%;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.1);
 }
 
 .dashboard {
@@ -52,17 +77,55 @@ main {
     border-radius: 2rem;
     background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.2)
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.7)
   );
 }
 
-.info {
-    flex: 2;
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
 }
 
- img {
-    border-radius: 10px;
+.link h2 {
+    padding: 0rem 1rem
+}
+
+.info {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+
+ .links img {
+    border-radius: 0.5rem;
     width: 20%;
-    height: 20%;
+    height: auto;
+}
+
+.cards img {
+    border-radius: 0.5rem;
+    width: 30%;
+    height: auto;
+}
+
+.user img {
+    border-radius: 0.5rem;
+    width: 20%;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+    flex-direction: column;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
+    justify-content: space-between;
 }
